@@ -59,44 +59,44 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="grid min-h-screen w-full grid-cols-3 grid-rows-3 gap-4 p-6 transition-all duration-500">
-        <Card>
+      <main className="grid min-h-screen w-full grid-cols-1 grid-rows-3 gap-4 p-6 transition-all duration-500 md:grid-cols-3">
+        <Card className="min-h-64">
           <CardHeader className="h-1/3">
             <CardTitle>Umidade</CardTitle>
             <CardDescription>Porcentagem</CardDescription>
             <Separator className="" />
           </CardHeader>
           <CardContent className="flex h-2/3 items-center justify-center p-0">
-            <p className="text-center text-7xl font-bold">
+            <p className="text-center text-5xl font-bold md:text-7xl">
               {data ? data[data?.length - 1].umidity : 0} %
             </p>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="min-h-64">
           <CardHeader className="h-1/3">
             <CardTitle>Temperatura</CardTitle>
             <CardDescription>Celsius (ºC)</CardDescription>
             <Separator />
           </CardHeader>
           <CardContent className="flex h-2/3 items-center justify-center p-0">
-            <p className="text-center text-7xl font-bold">
+            <p className="text-center text-5xl font-bold md:text-7xl">
               {data ? data[data?.length - 1].temperature : 0} ºC
             </p>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="min-h-64">
           <CardHeader className="h-1/3">
             <CardTitle>Luminosidade</CardTitle>
             <CardDescription>Sinal digital (0 ou 1)</CardDescription>
             <Separator />
           </CardHeader>
           <CardContent className="flex h-2/3 items-center justify-center p-0">
-            <p className="text-center text-7xl font-bold">
+            <p className="text-center text-5xl font-bold md:text-7xl">
               {data ? data[data?.length - 1].brightness : 0}
             </p>
           </CardContent>
         </Card>
-        <Card className="col-span-2 row-span-2 row-start-2">
+        <Card className="md:col-span-2 md:row-span-2 md:row-start-2">
           <CardHeader className="h-auto">
             <CardTitle>Linha do tempo</CardTitle>
           </CardHeader>
@@ -133,7 +133,7 @@ export default function Home() {
             </ChartContainer>
           </CardContent>
         </Card>
-        <Card className="col-start-3 row-span-2 row-start-2">
+        <Card className="md:col-start-3 md:row-span-2 md:row-start-2">
           <CardContent className="flex h-full items-center justify-center">
             <img
               src="/idle-bounce.gif"
