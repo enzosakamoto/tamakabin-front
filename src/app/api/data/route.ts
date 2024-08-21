@@ -52,6 +52,36 @@ export async function POST(req: Request) {
     console.log('Data inserted:', response)
     return new Response('Data received successfully', { status: 200 })
   } catch (error) {
+    console.error('Error receiving data:', error)
+    return new Response('Invalid JSON', { status: 400 })
+  }
+}
+
+export async function GET() {
+  const { database, collection } = enviroments
+
+  try {
+    const client = await clientPromise
+    const db = client.db(database)
+
+    const response = await db
+      .collection(collection)
+      .find({})
+      .sort({ timestamp: -1 })
+      .limit(5)
+      .toArray()
+
+    const responseWithoutId = response
+      .map((data) => {
+        const { _id, ...rest } = data
+        return rest
+      })
+      .sort((a, b) => a.timestamp - b.timestamp)
+
+    console.log('Retrived Data:', responseWithoutId)
+    return new Response(JSON.stringify(responseWithoutId), { status: 200 })
+  } catch (error) {
+    console.error('Error receiving data:', error)
     return new Response('Invalid JSON', { status: 400 })
   }
 }
