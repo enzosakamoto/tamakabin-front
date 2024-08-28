@@ -10,15 +10,15 @@ export async function POST(req: Request) {
     const body = (await req.json()) as Data
     const { umidity, temperature, brightness } = body
 
-    if (!umidity) {
+    if (!umidity && umidity !== 0) {
       return new Response('Missing umidity', { status: 400 })
     }
 
-    if (!temperature) {
+    if (!temperature && temperature !== 0) {
       return new Response('Missing temperature', { status: 400 })
     }
 
-    if (!brightness) {
+    if (!brightness && brightness !== 0) {
       return new Response('Missing brightness', { status: 400 })
     }
 
