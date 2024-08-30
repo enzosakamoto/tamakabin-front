@@ -1,7 +1,7 @@
 # Tamakabin
 
 **Tamakabin** é o projeto do 2° semestre da disciplina **Microcontroladores e Sistemas Embarcados** (EEN251) do **Instituto Mauá de Tecnologia** (IMT), ministrada pelos professores [Sergio Ribeiro Augusto](https://www.linkedin.com/in/sergio-ribeiro-augusto-258a9ba0/?originalSubdomain=br) e [Rodrigo França](https://www.linkedin.com/in/rodrigo-fran%C3%A7a-847872b1/).<BR>
-Este repositório é responsável pela parte de IoT da aplicação. O front-end está [neste repositório](https://github.com/enzosakamoto/tamakabin-front).
+Este repositório é responsável pela parte de front-end e servidor da aplicação. O back-end está [neste repositório](https://github.com/pedromatumoto/tamakabin).
 
 <p align="center">
   <img width="910" alt="planta" src="https://github.com/user-attachments/assets/808cb715-9244-4dbf-bf49-f9812f788d3e">
