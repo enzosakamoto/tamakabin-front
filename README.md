@@ -135,9 +135,7 @@ O `cmd` e as seguintes bibliotecas foram utilizadas para depurar o código:
 
 
 
-<p align="center">
-  <img height="600" alt="testedisplay" src="https://github.com/user-attachments/assets/29dde2cd-2778-42bc-bdb6-7532efe9892e">
-</p>
+[(https://github.com/user-attachments/assets/4b965cbf-abdd-4a26-8b6d-a66f4481a4f5)](https://github.com/user-attachments/assets/4b965cbf-abdd-4a26-8b6d-a66f4481a4f5)
 
 
 ## Foto da equipe
