@@ -52,6 +52,11 @@ export default function Home() {
       setData(data)
       // setData(data)
     }
+
+    setInterval(() => {
+      window.location.reload()
+    }, 5000)
+
     handleData()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])

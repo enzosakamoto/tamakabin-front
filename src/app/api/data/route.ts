@@ -35,12 +35,12 @@ export async function POST(req: Request) {
 
     const timestampNow = Date.now()
 
-    console.log('Received data:', {
-      umidity,
-      temperature,
-      brightness,
-      timestampNow
-    })
+    // console.log('Received data:', {
+    //   umidity,
+    //   temperature,
+    //   brightness,
+    //   timestampNow
+    // })
 
     const response = await db.collection(collection).insertOne({
       umidity,
@@ -78,7 +78,7 @@ export async function GET() {
       })
       .sort((a, b) => a.timestamp - b.timestamp)
 
-    console.log('Retrived Data:', responseWithoutId)
+    // console.log('Retrived Data:', responseWithoutId)
     return new Response(JSON.stringify(responseWithoutId), { status: 200 })
   } catch (error) {
     console.error('Error receiving data:', error)
