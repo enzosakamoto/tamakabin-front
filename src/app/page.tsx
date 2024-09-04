@@ -50,14 +50,12 @@ export default function Home() {
     const handleData = async () => {
       const data: (Data & { timestamp: number })[] = await getData()
       setData(data)
-      // setData(data)
     }
 
     setInterval(() => {
-      window.location.reload()
-    }, 5000)
+      handleData()
+    }, 1000)
 
-    handleData()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -143,7 +141,7 @@ export default function Home() {
             <img
               src="/idle-bounce.gif"
               alt="Jumping plant"
-              className={`h-full object-cover ${!theme ? 'invert' : theme === 'light' ? 'invert' : ''}`}
+              className={`h-full object-cover ${theme === 'light' ? 'invert' : ''}`}
             />
           </CardContent>
         </Card>
