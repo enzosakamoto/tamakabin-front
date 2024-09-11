@@ -1,7 +1,7 @@
 # Tamakabin
 
 **Tamakabin** é o projeto do 2° semestre da disciplina **Microcontroladores e Sistemas Embarcados** (EEN251) do **Instituto Mauá de Tecnologia** (IMT), ministrada pelos professores [Sergio Ribeiro Augusto](https://www.linkedin.com/in/sergio-ribeiro-augusto-258a9ba0/?originalSubdomain=br) e [Rodrigo França](https://www.linkedin.com/in/rodrigo-fran%C3%A7a-847872b1/).<BR>
-Este repositório é responsável pela parte de front-end e servidor da aplicação. O back-end está [neste repositório](https://github.com/pedromatumoto/tamakabin).
+Este repositório é responsável pela parte de IoT da aplicação. O front-end está [neste repositório](https://github.com/enzosakamoto/tamakabin-front).
 
 <p align="center">
   <img width="910" alt="planta" src="https://github.com/user-attachments/assets/808cb715-9244-4dbf-bf49-f9812f788d3e">
@@ -40,7 +40,7 @@ O projeto consiste em uma Raspberry Pi conectada à um vaso de planta que envia 
 
 ## Diagrama de blocos
 
-![diagrama_blocos_tamakabin drawio](https://github.com/user-attachments/assets/0b7b289f-1450-4077-9225-5b2d5da3ec60)
+![diagrama_tamakabin](https://github.com/user-attachments/assets/c0558892-c244-40fe-8ab9-6786167160d4)
 
 
 ## Tecnologias e conceitos
@@ -63,6 +63,7 @@ O sistema é montado com os seguintes componentes:
 - 1 Módulo **Sensor de Luminosidade** Luz LDR
 - 1 Bomba d'água
 - 1 MOSFETs IRLZ44N
+- 1 Display OLED I2C 128x64
 
 ## Modelagem eletrônica
 
@@ -73,8 +74,9 @@ O circuito utiliza diversos conceitos eletrícos e eletrônicos desenvolvidos du
 - Conversão de sinais
 - Regulação de tensão
 
+
 <p align="center">
-  <img width="910" alt="diagrama eletronico" src="https://github.com/user-attachments/assets/c184c8cd-6486-4bfc-800b-a318ea7c7181">
+  <img width="910" alt="diagrama eletronico" src="https://github.com/user-attachments/assets/3806b64d-9aae-4408-b2cc-3fe62271ba92">
 </p>
 
 
@@ -86,6 +88,7 @@ Os componentes do projeto foram fornecidos pelo Instituto Mauá de Tecnologia. P
 | Raspberry Pi 3     | R$ 250,00 - R$ 350,00 |
 | Sensor DHT22       | R$ 20,00 - R$ 40,00   |
 | Módulo LDR         | R$ 5,00 - R$ 15,00    |
+| Display OLED 0.96  | R$ 18,00 - R$ 25,00   |
 
 # Funcionamento
 
@@ -103,6 +106,7 @@ Os componentes do projeto foram fornecidos pelo Instituto Mauá de Tecnologia. P
 
 4. **Tratamento e Uso dos Dados pela API**
    - A API armazena, processa ou aciona alertas com base nos dados recebidos.
+   - Mostra informações no display com base nos parâmetros de umidade, temperatura, luz e hora do dia.
 
 5. **Possíveis Extensões**
    - Automação de ações (e.g., ligar ventilador, acender luzes) baseada nos dados dos sensores.
@@ -115,8 +119,6 @@ O `cmd` e as seguintes bibliotecas foram utilizadas para depurar o código:
 - Adafruit_Python
 - requests
 - pymongo
-  
-## Diagrama de funcionamento
 
 # Testes
 
@@ -130,18 +132,17 @@ O `cmd` e as seguintes bibliotecas foram utilizadas para depurar o código:
 
 ## Dia 29/08/2024
 
-- **Teste de funcionamento do Display**
+- **Teste de funcionamento do Display e bomba**
 
+https://github.com/user-attachments/assets/4b965cbf-abdd-4a26-8b6d-a66f4481a4f5
 
-
-
-[(https://github.com/user-attachments/assets/4b965cbf-abdd-4a26-8b6d-a66f4481a4f5)](https://github.com/user-attachments/assets/4b965cbf-abdd-4a26-8b6d-a66f4481a4f5)
-
+## Dia 04/09/2024 - Apresentação final
+[Link do vídeo](https://youtu.be/6dndOLTqGWo)
 
 ## Foto da equipe
 
 <p align="center">
-  <img width="910" alt="kirby" src="assets\FOTO_EQUIPE.jpg">
+  <img width="800" alt="kirby" src="https://github.com/user-attachments/assets/b4e1d8fe-257f-430c-bb13-04429a5ec331">
 </p>
 
 # Autores
