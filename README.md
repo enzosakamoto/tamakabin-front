@@ -161,7 +161,6 @@ https://github.com/user-attachments/assets/4b965cbf-abdd-4a26-8b6d-a66f4481a4f5
 
 <p align="center">
   <img width="800" alt="kirby" src="https://github.com/user-attachments/assets/b4e1d8fe-257f-430c-bb13-04429a5ec331">
-  <img width="800" alt="kirby" src="https://github.com/user-attachments/assets/b4e1d8fe-257f-430c-bb13-04429a5ec331">
 </p>
 
 # Autores
