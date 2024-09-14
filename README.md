@@ -45,6 +45,7 @@ O projeto consiste em uma Raspberry Pi conectada à um vaso de planta que envia 
 ## Diagrama de blocos
 
 ![diagrama_tamakabin](https://github.com/user-attachments/assets/c0558892-c244-40fe-8ab9-6786167160d4)
+![diagrama_tamakabin](https://github.com/user-attachments/assets/c0558892-c244-40fe-8ab9-6786167160d4)
 
 
 ## Tecnologias e conceitos
@@ -127,6 +128,7 @@ O banco de dados utilizado foi o MongoDB Atlas, um banco de dados NoSQL baseado 
 4. **Tratamento e Uso dos Dados pela API**
    - A API armazena, processa ou aciona alertas com base nos dados recebidos.
    - Mostra informações no display com base nos parâmetros de umidade, temperatura, luz e hora do dia.
+   - Mostra informações no display com base nos parâmetros de umidade, temperatura, luz e hora do dia.
 
 5. **Possíveis Extensões**
    - Automação de ações (e.g., ligar ventilador, acender luzes) baseada nos dados dos sensores.
@@ -152,6 +154,7 @@ A interface gráfica é acessada através de um navegador web e exibe as informa
 ## Dia 29/08/2024
 
 - **Teste de funcionamento do Display e bomba**
+- **Teste de funcionamento do Display e bomba**
 
 https://github.com/user-attachments/assets/4b965cbf-abdd-4a26-8b6d-a66f4481a4f5
 
@@ -161,6 +164,7 @@ https://github.com/user-attachments/assets/4b965cbf-abdd-4a26-8b6d-a66f4481a4f5
 # Foto da equipe
 
 <p align="center">
+  <img width="800" alt="kirby" src="https://github.com/user-attachments/assets/b4e1d8fe-257f-430c-bb13-04429a5ec331">
   <img width="800" alt="kirby" src="https://github.com/user-attachments/assets/b4e1d8fe-257f-430c-bb13-04429a5ec331">
 </p>
 
